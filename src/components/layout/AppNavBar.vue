@@ -23,7 +23,7 @@ const links = [
         to="/"
         class="text-lg font-semibold text-gray-900 dark:text-gray-100"
       >
-        Snoozyman - Mikko Tuomikoski
+        Snoozyman
       </router-link>
 
       <div class="flex items-center gap-1">

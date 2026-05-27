@@ -1,28 +1,31 @@
 <script setup lang="ts">
-import { useHead } from '@unhead/vue'
-import BrandIcon from '../components/ui/BrandIcon.vue'
-import {
-  GraduationCap,
-  Code,
-  Shield,
-  ArrowRight,
-  Mail,
-} from '@lucide/vue'
-import { projects } from '../data/projects'
-import { socialLinks } from '../data/social'
+import { useHead } from "@unhead/vue";
+import BrandIcon from "../components/ui/BrandIcon.vue";
+import { GraduationCap, Code, Shield, ArrowRight, Mail } from "@lucide/vue";
+import { projects } from "../data/projects";
+import { socialLinks } from "../data/social";
 
-const featured = projects.filter((p) => p.featured)
+const featured = projects.filter((p) => p.featured);
 
 useHead({
-  title: 'snoozyman — software &amp; security',
+  title: "snoozyman — software &amp; security",
   meta: [
-    { name: 'description', content: 'Personal portfolio of Mikko Tuomikoski — student software developer and cyber security enthusiast based in Finland.' },
-    { property: 'og:title', content: 'snoozyman — software & security' },
-    { property: 'og:description', content: 'Personal portfolio of Mikko Tuomikoski — student software developer and cyber security enthusiast.' },
-    { property: 'og:url', content: 'https://snoozyman.eu/' },
-    { property: 'og:type', content: 'website' },
+    {
+      name: "description",
+      content:
+        "Personal portfolio of Mikko Tuomikoski — student software developer and cyber security enthusiast based in Finland.",
+    },
+    { property: "og:title", content: "snoozyman — software & security" },
+    {
+      property: "og:description",
+      content:
+        "Personal portfolio of Mikko Tuomikoski — student software developer and cyber security enthusiast.",
+    },
+    { property: "og:url", content: "https://snoozyman.eu/" },
+    { property: "og:type", content: "website" },
+    { property: "viewport", content: "width=device-width, initial-scale=1" },
   ],
-})
+});
 </script>
 
 <template>
@@ -114,9 +117,7 @@ useHead({
         <div
           class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#1a1b23] p-6 transition-all hover:shadow-md"
         >
-          <Code
-            class="mb-4 h-6 w-6 text-purple-600 dark:text-purple-400"
-          />
+          <Code class="mb-4 h-6 w-6 text-purple-600 dark:text-purple-400" />
           <h3 class="font-semibold text-gray-900 dark:text-gray-100">
             Building
           </h3>
@@ -149,9 +150,7 @@ useHead({
           >
             Selected work
           </p>
-          <h2
-            class="mt-1 text-3xl font-bold text-gray-900 dark:text-gray-100"
-          >
+          <h2 class="mt-1 text-3xl font-bold text-gray-900 dark:text-gray-100">
             Featured Projects
           </h2>
         </div>
@@ -169,9 +168,7 @@ useHead({
           :key="project.slug"
           :to="`/projects/${project.slug}`"
           :class="[
-            i === 0
-              ? 'sm:col-span-2 sm:grid sm:grid-cols-2 sm:gap-6'
-              : '',
+            i === 0 ? 'sm:col-span-2 sm:grid sm:grid-cols-2 sm:gap-6' : '',
             'group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#1a1b23] p-6 transition-all hover:shadow-lg hover:border-purple-300 dark:hover:border-purple-700',
           ]"
         >
@@ -187,7 +184,9 @@ useHead({
               >
                 {{ project.title }}
               </h3>
-              <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+              <p
+                class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-400"
+              >
                 {{ project.longDescription || project.description }}
               </p>
               <div class="mt-4 flex flex-wrap gap-2">
