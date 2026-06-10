@@ -1,51 +1,71 @@
-import type { Project } from '../types'
+import type { Project } from "../types";
 
 export const projects: Project[] = [
   {
-    slug: 'snoozyman-eu',
-    title: 'snoozyman.eu',
-    description: 'Personal portfolio built with Vue, TypeScript, and Tailwind CSS.',
+    slug: "snoozyman-eu",
+    title: "snoozyman.eu",
+    description:
+      "Personal portfolio built with Vue, TypeScript, and Tailwind CSS.",
     longDescription:
-      'The site you are looking at. A static personal portfolio showcasing my work as a student software developer and cyber security enthusiast.',
-    tags: ['Vue', 'TypeScript', 'Tailwind CSS', 'Vite', 'Bun'],
+      "The site you are looking at. A static personal portfolio showcasing my work as a student software developer and cyber security enthusiast.",
+    tags: ["Vue", "TypeScript", "Tailwind CSS", "Vite", "Bun"],
     highlights: [
-      'Dark mode with system preference detection',
-      'Responsive design',
-      'Static site with Vite',
+      "Dark mode with system preference detection",
+      "Responsive design",
+      "Static site with Vite",
     ],
     links: {
-      github: 'https://github.com/snoozyman/snoozyman.eu',
+      github: "https://github.com/snoozyman/snoozyman.eu",
     },
     featured: true,
   },
   {
-    slug: 'ktd-booking',
-    title: 'Koh Tao Divers — Booking System',
-    description:
-      'A booking and admin system for a dive school built with Nuxt 4.',
+    slug: "ktd-website",
+    title: "Koh Tao Divers — Website",
+    description: "A modern, responsive website for a dive school.",
     longDescription:
-      'Full-featured booking platform for Koh Tao Divers, featuring course browsing, online booking with Stripe payments, an admin dashboard for managing bookings/courses/customers, bilingual content support, and SQLite-backed data storage via Drizzle ORM. Deployed on Cloudflare with Auth0 authentication.',
-    tags: [
-      'Nuxt',
-      'Vue',
-      'TypeScript',
-      'Tailwind CSS',
-      'SQLite',
-      'Drizzle',
-      'Auth0',
-      'Stripe',
-      'Cloudflare',
-    ],
+      "A complete redesign and rebuild of the Koh Tao Divers website using 11ty, Handlebars, and Netlify. The site features a clean, modern design with a focus on usability and performance, showcasing the dive school’s courses, services, and location.",
+    tags: ["SSG", "11ty", "Netlify", "Handlebars", "Decap CMS"],
     highlights: [
-      'Course browsing and online booking with Stripe payments',
-      'Admin dashboard for managing bookings, courses, and customers',
-      'Bilingual content support',
-      'SQLite + Drizzle ORM on Cloudflare',
-      'Auth0 authentication',
+      "Complete redesign and rebuild of the Koh Tao Divers website",
+      "Clean, modern design with a focus on usability and performance",
+      "Bilingual content support with Decap CMS",
+      "Showcasing the dive school's courses, services, and location",
+      "Built with 11ty and Handlebars, deployed on Netlify",
+      "SEO optimization and responsive design",
     ],
     links: {
-      github: 'https://github.com/Snoozyman/ktd-booking',
+      live: "https://www.kohtaodivers.com/",
+    },
+  },
+  {
+    slug: "ktd-booking",
+    title: "Koh Tao Divers — Booking System",
+    description:
+      "A booking and admin system for a dive school built with Nuxt 4.",
+    longDescription:
+      "Full-featured booking platform for Koh Tao Divers, featuring course browsing, online booking with Stripe payments, an admin dashboard for managing bookings/courses/customers, bilingual content support, and SQLite-backed data storage via Drizzle ORM. Deployed on Cloudflare with Auth0 authentication.",
+    tags: [
+      "Nuxt",
+      "Vue",
+      "TypeScript",
+      "Tailwind CSS",
+      "SQLite",
+      "Drizzle",
+      "Auth0",
+      "Stripe",
+      "Cloudflare",
+    ],
+    highlights: [
+      "Course browsing and online booking with Stripe payments",
+      "Admin dashboard for managing bookings, courses, and customers",
+      "Bilingual content support",
+      "SQLite + Drizzle ORM on Cloudflare",
+      "Auth0 authentication",
+    ],
+    links: {
+      //github: "https://github.com/Snoozyman/ktd-booking",
     },
     featured: true,
   },
-]
+];
