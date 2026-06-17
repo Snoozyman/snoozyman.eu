@@ -39,6 +39,34 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "quefy",
+    title: "Quefy",
+    description: "Multi-user YouTube and Spotify audio streaming rooms.",
+    longDescription:
+      "Real-time collaborative audio streaming platform where users create rooms, share a code, and listen to music together. Features YouTube audio extraction via yt-dlp, Spotify Web Playback SDK integration, SSE-based real-time room state sync, PWA support, and a responsive UI built with Nuxt UI v4.",
+    tags: [
+      "Docker",
+      "Nuxt",
+      "Vue",
+      "TypeScript",
+      "Tailwind CSS",
+      "Bun",
+      "yt-dlp",
+      "Spotify API",
+      "PWA",
+    ],
+    highlights: [
+      "Real-time room state sync via Server-Sent Events with polling fallback",
+      "YouTube audio streaming with yt-dlp backend",
+      "Spotify Web Playback SDK integration with Premium account support",
+      "Progressive Web App with offline support",
+      "Responsive dark-themed UI",
+    ],
+    links: {
+      github: "https://github.com/Snoozyman/quefy",
+    },
+  },
+  {
     slug: "ktd-booking",
     title: "Koh Tao Divers — Booking System",
     description:
