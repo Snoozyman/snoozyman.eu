@@ -8,14 +8,14 @@ import { socialLinks } from "../data/social";
 const featured = projects.filter((p) => p.featured);
 
 useHead({
-  title: "snoozyman — software &amp; security",
+  title: "snoozyman — software & security",
   meta: [
     {
       name: "description",
       content:
         "Personal portfolio of Mikko Tuomikoski — student software developer and cyber security enthusiast based in Finland.",
     },
-    { property: "og:title", content: "snoozyman — software & security" },
+    { property: "og:title", content: "Snoozyman — software & security" },
     {
       property: "og:description",
       content:
