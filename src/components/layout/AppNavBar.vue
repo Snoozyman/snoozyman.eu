@@ -16,7 +16,7 @@ const links = [
 
 <template>
   <nav
-    class="sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-[#16171d]/80 backdrop-blur-sm"
+    class="sticky overflow-auto scrollbar-none top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-[#16171d]/80 backdrop-blur-sm"
   >
     <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
       <router-link
